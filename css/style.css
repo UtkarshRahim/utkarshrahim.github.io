@@ -1,0 +1,492 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #232323;
+    overflow-x: hidden;
+    /* padding: 0 6rem; */
+    box-sizing: border-box
+}
+
+header {
+    width: 88%;
+    height: 55px;
+    background: #fff;
+    position: fixed;
+    top: 25px;
+    left: 6%;
+    box-sizing: border-box;
+    z-index: 2;
+    line-height: 55px;
+    /* padding: 0 4rem; */
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5s;
+    -ms-animation: fadeIn 0.5s;
+    -o-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+    -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
+}
+
+nav ul li {
+    width: auto;
+    display: inline-block;
+    min-width: 32%;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-align: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul li a {
+    color: inherit;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color: #FF0000;
+}
+
+.fixed-header {
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    width: 100%;
+}
+
+.mob-logo {
+    width: 30%;
+}
+
+.mob-logo img {
+    width: 25%;
+}
+
+.menu-icon {
+    cursor: pointer;
+    color: transparent;
+    background-image: url(../img/menu.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.logo img {
+    width: 120px;
+    position: absolute;
+    top: -20%;
+    height: 120px;
+}
+
+.fix-logo {
+    /* position: relative !important;
+    width: 16% !important;
+    top: 0 !important; */
+    width: 100px !important;
+    height: 100px !important;
+    top: 0 !important;
+}
+
+.mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55px;
+    background: #fff;
+    z-index: 2;
+    width: 100%;
+    display: none;
+    -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
+}
+
+.mob-nav {
+    display: none
+}
+
+.navbar {
+    top: 0rem !important;
+    z-index: 3;
+    position: fixed !important;
+    width: 100%;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(../img/champions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-text {
+    height: 100%;
+}
+
+.banner-content {
+    z-index: 11;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    -webkit-animation-name: moveInLeft;
+    animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    -webkit-animation: moveInRight 1s ease-out;
+    animation: moveInRight 1s ease-out;
+    margin-bottom: 2rem;
+}
+
+.section-overlay-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: .5;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.bg-light {
+    background-color: #fff!important;
+}
+
+.navbar {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: #002D5F !important;
+    z-index: 10;
+}
+
+.theme-color {
+    color: #002D5F;
+}
+
+.text-s {
+    font-size: .8rem;
+}
+
+.text-sm {
+    font-size: 1.2rem;
+}
+
+.text-md {
+    font-size: 1.4rem;
+}
+
+.text-lg {
+    font-size: 1.6rem;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-secondary {
+    color: #FF0000 !important;
+}
+
+.btn-danger {
+    background-color: #DD150D !important
+}
+
+.bg-grey {
+    background: #F4F4F4;
+}
+
+.owl-carousel {
+    margin-bottom: 80px;
+}
+
+.owl-carousel .owl-dots {
+    position: absolute;
+    bottom: -80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+    background-color: #002D5F;
+}
+
+.owl-carousel .owl-dots .owl-dot:not(:last-child) {
+    margin-right: .75rem;
+}
+
+.social-media, .section-contact {
+    padding: 10rem 0;
+}
+
+#socialMedia .card {
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+#socialMedia .card-header {
+    background: #fff;
+    font-weight: 800;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    background-color: #002D5F;
+}
+
+footer .input-container {
+    padding: 5rem 0;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 1.3rem;
+}
+
+footer input, footer textarea {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+}
+
+footer textarea {
+    height: 100%;
+    padding: 1rem 1.5rem;
+}
+
+footer button {
+    border-radius: 0 !important;
+}
+
+.container-fluid {
+    padding-left: 6%;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4)
+}
+
+.contact-box {
+    padding-right: 3rem !important;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translate3d(0, -40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        transform: translate3d(0, -40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(../img/facebook.svg);
+}
+
+.insta {
+    background-image: url(../img/insta.svg);
+}
+
+.twitter {
+    background-image: url(../img/twitter.svg);
+}
+
+.latest-news {
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dark-gray {
+    color: #666666;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5%;
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.navbar-collapse {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 25px;
+    top: 30px;
+    opacity: 1;
+    background-image: url(../img/close_white.svg);
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 2.5rem;
+}
+
+.heading {
+    padding-top: 50rem;
+}
+
+.feedback {
+    padding-top: 5rem;
+}
+
+.membership-label {
+    font-size: 16;
+}
+
+.submit-form {
+    font-size: 18px;
+    width: 100px;
+}

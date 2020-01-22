@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .banner {
+        /* background-position: center !important; */
+        background-position: 25% 50% !important;
+    }
+    .header__text-box {
+        left: 50% !important;
+        /* text-align: center !important; */
+    }
+    .mobile-header {
+        display: flex;
+    }
+    .contact-box {
+        padding-right: 0 !important;
+    }
+    .social-media, .section-contact {
+        padding: 5rem 0
+    }
+    footer .container-fluid {
+        padding-left: 15px !important;
+    }
+    #deskTopNav {
+        display: none !important
+    }
+}
