@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar"
-import { experience } from "../data/experience.ts"
+import { experience } from "../data/experience"
 export default function Experience(){
 
 return(
@@ -14,7 +14,7 @@ return(
 Experience
 </h1>
 
-{experience.map(job => (
+{experience.map((job:any )=> (
 
 <div
 key={job.company}
@@ -35,7 +35,7 @@ className="mb-12 border border-gray-800 rounded-xl p-8"
 
 <ul className="list-disc pl-6 space-y-2 text-gray-300">
 
-{job.points.map((p,i)=>(
+{job.points.map((p: any,i: any)=>(
 <li key={i}>{p}</li>
 ))}
 
