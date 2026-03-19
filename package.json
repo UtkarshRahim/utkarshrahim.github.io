@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "https://utkarshrahim.github.io",
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
-    "deploy": "next build && next export && gh-pages -d out",
-    "dev": "next dev"
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "framer-motion": "^12.35.0",
