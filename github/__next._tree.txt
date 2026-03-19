@@ -1,0 +1,5 @@
+:HL["/_next/static/chunks/8a6edc3704409fd0.css","style"]
+:HL["https://github-readme-stats.vercel.app/api?username=utkarshrahim&show_icons=true&theme=transparent&hide_border=true","image"]
+:HL["https://github-readme-streak-stats.herokuapp.com/?user=utkarshrahim&theme=transparent&hide_border=true","image"]
+:HL["https://ghchart.rashidkhan.dev/utkarshrahim","image"]
+0:{"buildId":"ZJf-UNcfvSuRmyEpDjuU6","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"github","paramType":null,"paramKey":"github","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
